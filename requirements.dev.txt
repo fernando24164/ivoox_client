@@ -1,0 +1,6 @@
+black
+coverage
+isort
+pylint
+twine
+wheel

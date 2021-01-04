@@ -1,0 +1,25 @@
+[run]
+branch = True
+source =
+    ivoox_client
+
+[paths]
+source =
+    src/ivoox_client
+    **/site-packages/ivoox_client
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self.debug
+    raise AssertionError
+    raise NotImplentedError
+    if 0:
+    if __name__ == .__main__.:
+
+ignore_errors = True
+
+[html]
+title = ivoox_client Coverage Test Report
+directory = docs/source/_static/coverage
